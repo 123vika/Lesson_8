@@ -16,6 +16,7 @@ public class Server {
             = new ConcurrentLinkedQueue<>();
 
     public Server() {
+        
         Socket clientSocket = null;
         ServerSocket serverSocket = null;
         try {

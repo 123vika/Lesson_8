@@ -21,8 +21,10 @@ public class Client {
     }
 
     public Client() {
+
         cnt++;
         number = cnt;
+
         try {
             clientSocket = new Socket("localhost", 80);
         } catch (IOException e) {
@@ -40,11 +42,6 @@ public class Client {
             e.printStackTrace();
         }
         System.out.println("Client was created, " + cnt);
-
-
-
-
-
     }
 
     public void close() throws IOException {
@@ -67,6 +64,7 @@ public class Client {
     public void showDialog(){
         System.out.println(in.nextLine());
     }
+
 
     public static void main(String[] args) {
         new Client();

@@ -1,5 +1,4 @@
 package server.multusession;
-
 import javax.accessibility.AccessibleContext;
 import javax.swing.*;
 import java.awt.*;
@@ -33,6 +32,7 @@ public class ClientFrame extends JFrame {
 
     // конструктор
     public ClientFrame() {
+
         JFrame jFrame = new JFrame();
         JPanel panel = new JPanel(new GridLayout(5, 1));
         JLabel l1 = new JLabel("Введите адрес сервера");
@@ -67,6 +67,7 @@ public class ClientFrame extends JFrame {
                 jFrame.dispose();
             }
             // Задаём настройки элементов на форме
+
             setBounds(600, 300, 600, 500);
             setTitle("Client");
             setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
